@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Registration</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1</id>
+				<title>Open the form for registration</title>
+												<template>Test Case (Steps)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Go to http://prod.qa.nolimit.school/</preconds>
+										<steps_separated><step>
+<index>1</index><content>Go to the home page of Master Study.</content><expected>The home page of Master Study is open</expected></step>
+<step>
+<index>2</index><content>Click on the little man image in the right in the header.</content><expected>The menu is open.</expected></step>
+<step>
+<index>3</index><content>Click on the &quot;Login/Sign Up&quot; button.</content><expected>The page with Login and Sign Up forms are open.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C2</id>
+				<title>Register a new student with correct data</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-3</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input correct data in the password field.
+4. Input correct data in the repeat password field.
+5. Click the Registration button.</steps>
+										<expected>The user is registered.
+A confirmation email is sent to the user.
+The User profile page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C3</id>
+				<title>Open the form for registration as instructor</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/secure/RapidBoard.jspa?rapidView=1&amp;projectKey=NS&amp;modal=detail&amp;selectedIssue=NS-4&amp;assignee=5fff081634847e00694bfced</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the registration form.
+2. Click on the checkbox &quot;Register as instructor&quot;.
+</steps>
+										<expected>&quot;Degree&quot; and &quot;Expertise&quot; fields are displayed, to register as an instructor. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C4</id>
+				<title>Register a new instructor</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/secure/RapidBoard.jspa?rapidView=1&amp;projectKey=NS&amp;modal=detail&amp;selectedIssue=NS-4&amp;assignee=5fff081634847e00694bfced</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Sign up form is opened.</preconds>
+										<steps>1. Input the correct data in the login field.
+2. Input the correct data in the email field.
+3. Input the correct data in the password field.
+4. Input the correct data in the repeat password field.
+5. Input the checkbox next to the register as an instructor.
+6. Input the correct data in the Degree field.
+7. Input the correct data in the Expertise field.
+8. Click on the Register button.</steps>
+										<expected>The user is registered.
+A confirmation email is sent to a user.
+A user profile page is opened.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C5</id>
+				<title>Enabling  the registration button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The Sign Up form is opened.</preconds>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input correct data in the password field.
+4. Input correct data in the repeat password field.
+</steps>
+										<expected>The Register button is enabled.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C6</id>
+				<title>Registration button in default state</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open Sign up form.
+2. Check the &quot;Register&quot; button on the registration form.</steps>
+										<expected>The register button is present in the lower right corner of the form.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C7</id>
+				<title>Sending a confirmation email after registration</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The registration form is opened.</preconds>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input correct data in the password field.
+4. Input correct data in the repeat password field.
+5. Click the Registration button.
+6. Check the inputted email for a confirmation letter.</steps>
+										<expected>The confirmation letter is sent to the email of the newly registered user.</expected>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Validation</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C8</id>
+				<title>Register with empty fields in data</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Sign up/Login page is open.</preconds>
+										<steps>1. On the sign-up page do not input any data.
+2. Click on the Register button.</steps>
+										<expected>The error message is displayed.
+The error text is displayed below the fields without data.
+The error fields are framed and highlighted in red color.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C9</id>
+				<title>Register with login 8 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open Sign up form.
+2. In a login field input 8 symbols (include letters, capital letters, numbers, special symbols)
+3. Input the correct data in the password field and repeat the password.
+4. Click on the Register button.</steps>
+										<expected>The user is successfully registered.
+A confirmation email is sent to the user.
+The personal account page is open.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C10</id>
+				<title>Register with login &lt;8 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open Sign up page.
+2. In a  login field input &lt;8 symbols (include letters, capital letters, numbers, special symbols)
+3. Input the correct data in the password field and repeat the password.
+4. Click on the Register button.</steps>
+										<expected>The error message is displayed.
+The login field is framed and highlighted in red color. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C11</id>
+				<title>Regisrer with login 32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open Sign up form.
+2. In a login field input 32 symbols (include letters, capital letters, numbers, special symbols)
+3. Input the correct data in the password field and repeat the password.
+4. Click on the Register button.</steps>
+										<expected>The user is successfully registered.
+A confirmation email is sent to the user.
+The personal account page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C12</id>
+				<title>Register with login &gt;32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. The Signup page is open.
+2. In a login field input &gt;32 symbols (including letters, capital letters, numbers, and special symbols)
+3. Input the correct data in the password field and repeat the password.
+4. Click on the Register button.</steps>
+										<expected>The error message is displayed.
+The login field is framed and highlighted in red color. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C13</id>
+				<title>Register email without @ symbol</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Log in/Sign up page is open.</preconds>
+										<steps>1. Input correct data in the login field.
+2. Input email without the &quot;@&quot; symbol in the email field.
+3. Input the correct data in the password field and repeat the password.
+4. Click on the Register button.</steps>
+										<expected>Error message is displayed on form.
+Email fiel is fraimed and highlighted in red colour.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C14</id>
+				<title>Register a user with the same login that was registered earlier</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Register a new user on the website. </preconds>
+										<steps>1. Open the Signup page.
+2. Input login that you registered before in the login field.
+3. Input correct data in the email field.
+4. Input correct data in the password field.
+5. Input correct data in the repeat password field.
+6. Click the Registration button.</steps>
+										<expected>The error message that an account with such a login already exists in the system is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C15</id>
+				<title>Register a user with the same email that was regisred earlier</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Register a new user on the website. </preconds>
+										<steps>1. Open the Signup page.
+2. Input correct data in the login field.
+3. Input the same email that you register before in the email field.
+4. Input correct data in the password field.
+5. Input correct data in the repeat password field.
+6. Click the Registration button.</steps>
+										<expected>The error message that an account with such an email already exists in the system is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C16</id>
+				<title>Register a user with a different  repeated password</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input correct data in the password field.
+4. Input incorrect data in the repeat password field.
+5. Click the Registration button.</steps>
+										<expected>The error message that the repeated password is wrong is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C17</id>
+				<title>Register with password 8 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input 8 symbols in the password field.
+4. Input 8 symbols in the repeat password field.
+5. Click the Registration button.</steps>
+										<expected>The user is successfully registered.
+A confirmation email is sent to the user.
+The personal account page is open.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C18</id>
+				<title>Register with password &lt;8 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input &lt;8 symbols in the password field.
+4. Input &lt;8 symbols in the repeat password field.
+5. Click the Registration button.</steps>
+										<expected>The error message that the password is invalid is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C19</id>
+				<title>Register with password 32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input 32 symbols in the password field.
+4. Input 32 symbols in the repeat password field.
+5. Click the Registration button.
+</steps>
+										<expected>The user is successfully registered.
+A confirmation email is sent to the user.
+The personal account page is open.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C20</id>
+				<title>Register with password &gt;32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Input correct data in the login field.
+2. Input correct data in the email field.
+3. Input &gt;32 symbols in the password field.
+4. Input &gt;32 symbols in the repeat password field.
+5. Click the Registration button.</steps>
+										<expected>The error message that the password is invalid is displayed.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Login</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C21</id>
+				<title>Login as a student or instructor with correct data</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered.</preconds>
+										<steps>1. Open the Login page.
+2. Input correct data in the login field.
+3. Input correct data in the password field.
+4. Click on the Login button.</steps>
+										<expected>The user is redirected to the personal account page.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C22</id>
+				<title>Login after click on checkbox &quot;Remember Me&quot;</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>600</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered with a checkbox &quot;remember me&quot;.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Open the Login page.</content><expected>Login and password data are automatically displayed in fields. </expected></step>
+<step>
+<index>2</index><content>Click on the login button.</content><expected>The personal account page is open.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C23</id>
+				<title>Login with facebook</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login on Facebook.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Open the login page.</content><expected>The login page is open.</expected></step>
+<step>
+<index>2</index><content>Click on the line &quot;Login with Facebook&quot;</content><expected>The system redirects the user on login with the Facebook page.</expected></step>
+<step>
+<index>3</index><content>Log in with a Facebook page is open.</content><expected>Login and password are displayed in the Login and Password fields.</expected></step>
+<step>
+<index>4</index><content>Click on the Login button.</content><expected>The system redirects the user to the personal account page.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C24</id>
+				<title>Login with google</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in Google.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Open login page.
+</content><expected></expected></step>
+<step>
+<index>2</index><content>Click on the line &quot;Login with Google&quot;</content><expected>The system redirects the user to the login with google page.</expected></step>
+<step>
+<index>3</index><content>Login with google page is open.</content><expected>Login and password are displayed in the login and password fields.</expected></step>
+<step>
+<index>4</index><content>Click on the Login button.</content><expected>The personal account page is open.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C25</id>
+				<title>Enabling the Login button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The Login form is opened.</preconds>
+										<steps>1. Input correct data in the login/email field.
+2. Input correct data in the password field.
+</steps>
+										<expected>The Register button is enabled.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C26</id>
+				<title>Login button in default state</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-28</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the Login form.
+2. Check the &quot;Login&quot; button on the login form.</steps>
+										<expected>The login button is present in the lower right corner of the form.</expected>
+									</custom>
+							</case>
+								</cases>
+								<sections>
+		<section>
+		<name>Login Validation</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C27</id>
+				<title>Login with 8 symbols in login field</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the login page.
+2. Input in the login field 8 symbols.
+3. Input the correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The user is successfully login.
+The personal account page is opened.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C28</id>
+				<title>Login with &lt;8 symbols in login field</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the login page.
+2. Input in the login field &lt;8 symbols.
+3. Input the correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The error message is displayed. The login field is highlighted in red color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C29</id>
+				<title>Login with 32 symbols in login field</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the login page.
+2. Input in the login field 32 symbols.
+3. Input the correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The user is successfully login.
+The personal account page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C30</id>
+				<title>Login with &gt;32 symbols in login field</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Login page is open.
+2. Input &gt;32 symbols in the login field.
+3. Input correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The error message is displayed. Login field highlighted in red color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C31</id>
+				<title>Login with login that wasn&apos;t registered in system</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>600</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-5</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Login page is open.
+2. Input in the login field data that wasn&apos;t registered in the system before.
+3. Input the correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The error message is displayed. Login field highlighted in red color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C32</id>
+				<title>Login with no existing email</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>600</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the login page.
+2. Input the correct data in the login field.
+3. Input in the password field data that wasn&apos;t registered in the system before.
+4. Click on the login button.</steps>
+										<expected>The error message is displayed. The Password field is highlighted in red color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C33</id>
+				<title>Login with incorrect password</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>600</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the login page.
+2. Input email that wasn&apos;t registered in the system in the login field.
+3. Input the correct data in the password field.
+4. Click on the login button.</steps>
+										<expected>The error message is displayed. The login field is highlighted in red color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C34</id>
+				<title>Sending email after submitting lost password</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/secure/RapidBoard.jspa?rapidView=1&amp;projectKey=NS&amp;modal=detail&amp;selectedIssue=NS-6&amp;assignee=5fff081634847e00694bfced</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Register in the system.</preconds>
+										<steps>1. Open the login page.
+2. Click on the line &quot;Lost password&quot;.
+3. In the displayed email line input the correct email that was registered in system before.
+4. Click on the button Send.
+5. Check that email.</steps>
+										<expected>The system sends an email with a form to create a new password.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>My Account</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>My account menu page</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C60</id>
+				<title>Opening my account page after registration</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the registration form.
+2. Input correct data in all required fields.
+3. Click on the Register button.</steps>
+										<expected>The user is registered in the system. 
+The My Account page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C61</id>
+				<title>Opening my account page after login</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the Login form.
+2. Input correct data in all required fields.
+3. Click on the Login button.</steps>
+										<expected>The user is ligin in the system. 
+The My Account page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C62</id>
+				<title>Opening my account page by direct link</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the My Account page.
+2. Copy the direct link of My Account in the URL line.
+3. Open a new tab in the browser.
+4. Paste the copied link in the URL line.
+5. Press Enter button on the keyboard.</steps>
+										<expected>The My Account page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C63</id>
+				<title>Check the required menu items on my account page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the My Account page.
+2. Check the menu item My courses.
+3. Check the menu item My quizzes.
+4. Check the menu item My orders.
+5. Check the menu item My memberships.</steps>
+										<expected>All required menu items are available.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C64</id>
+				<title>Check the icon for upload picture on my account page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into a system.</preconds>
+										<steps>1. Open the My Account page.
+2. Check the icon in the upper-left corner for upload pictures.</steps>
+										<expected>The icon for uploading pictures is available.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C66</id>
+				<title>Check the &quot;No Courses&quot; message in the menu tab &quot;Courses&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The user has no courses yet.</preconds>
+										<steps>1. Open the My Account page.
+2. Check the &quot;No courses&quot; message under the My Courses menu item. </steps>
+										<expected>The &quot;No courses&quot; message is displayed in the My Courses menu item.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C67</id>
+				<title>Check the edit profile link</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-42</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the My Account page.
+2. Check the Edit profile link on the lower-left side of the form.</steps>
+										<expected>The Edit Profile link is available.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Editing profile</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C35</id>
+				<title>Check the &quot;Edit Profile&quot; button on my account page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.</preconds>
+										<steps>1. Open the personal account page.
+2. Check the availability of the &quot;Edit profile&quot; link in the lower-left corner.</steps>
+										<expected>The &quot;Edit profile&quot; Link is available on a personal account page.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C36</id>
+				<title>Open the  Edit profile form</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.</preconds>
+										<steps>1. Open the personal account page.
+2. Click on the Edit profile link in the lower-left corner.</steps>
+										<expected>The Edit profile form is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C37</id>
+				<title>Edit profile form contains all required fields</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+My account page is opened.</preconds>
+										<steps>1. Open Edit profile form.
+2. Check the availability of the name text field.
+3. Check the availability of the surname text field.
+4. Check the availability of the BIO text field.</steps>
+										<expected>The Edit profile form contains the name, surname, and BIO text fields.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C38</id>
+				<title>Edit profile form contains &quot;Save changes&quot; button</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Scroll down to the bottom of the form.
+3. Check the availability of the &quot;Save changes&quot; button.
+</steps>
+										<expected>The &quot;Save changes&quot; button is available on the Edit profile form.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C39</id>
+				<title>Edit profile with saving changes</title>
+												<template>Test Case (Text)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input the correct data in the name field.
+3. Input the correct data in the surname field.
+4. Input the correct data in the BOI field.
+5. Click on the &quot;Save changes button.</steps>
+										<expected>The &quot;Successfully saved&quot; message is displayed under the &quot;Save changes&quot; button.
+The inputted data is saved in the user&apos;s profile.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C40</id>
+				<title>Close the Edit profile form</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-43</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the Edit profile link in the lower-left corner.</content><expected>The Edit profile form is opened.</expected></step>
+<step>
+<index>2</index><content>Click on the same Edit profile link on the left.</content><expected>The edit profile form is closed.
+The personal account page is displayed on the screen.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Uploading User profile</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C41</id>
+				<title>Upload photo to profile</title>
+												<template>Test Case (Steps)</template>
+																<type>Smoke &amp; Sanity</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-57</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the circle picture icon on the upper-left side of the My account page.</content><expected>The pop-up window is opened.</expected></step>
+<step>
+<index>2</index><content>Choose the photo from the device&apos;s gallery and click the &quot;Open&quot; button.</content><expected>The chosen photo is uploaded and displayed in a circle icon.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C65</id>
+				<title>Check the pop up for select image</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into a system.</preconds>
+										<steps>1. Open the My Account page.
+2. Click on the icon in the upper-left corner to upload pictures.
+ </steps>
+										<expected>The pop-up window for upload photos is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C42</id>
+				<title>Upload photo in .png format</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-57</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.
+The .png file is ready for uploading in the device&apos;s gallery.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the circle picture icon on the upper-left side of the My account page.</content><expected>The pop-up window is opened.</expected></step>
+<step>
+<index>2</index><content>Choose the photo from the device&apos;s gallery in .png and click the &quot;Open&quot; button.</content><expected>The chosen photo is uploaded and displayed in a circle icon.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C43</id>
+				<title>Upload photo in .jpg format</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-57</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.
+The .png file is ready for uploading in device&apos;s gellery.</preconds>
+										<steps_separated><step>
+<index>1</index><content>	
+Click on the circle picture icon on the upper-left side of the My account page.</content><expected>The pop-up window is opened.</expected></step>
+<step>
+<index>2</index><content>Choose the photo from the device&apos;s gallery in .jpg and click the &quot;Open&quot; button.</content><expected>The chosen photo is uploaded and displayed in a circle icon.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C44</id>
+				<title>Upload photo in .jpeg format</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-57</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.
+The .jpeg file is ready for uploading in the device&apos;s gallery.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the circle picture icon on the upper-left side of the My account page.</content><expected>The pop-up window is opened.</expected></step>
+<step>
+<index>2</index><content>Choose the photo from the device&apos;s gallery in .jpeg and click the &quot;Open&quot; button.</content><expected>The chosen photo is uploaded and displayed in a circle icon.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C45</id>
+				<title>Upload photo in invalid format</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-57</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered in the system.
+The personal account page is opened.
+The invalid file format, for example .CR2 file is ready for uploading in the device&apos;s gallery.</preconds>
+										<steps_separated><step>
+<index>1</index><content>Click on the circle picture icon on the upper-left side of the My account page.</content><expected>The pop-up window is opened.</expected></step>
+<step>
+<index>2</index><content>Choose the photo from the device&apos;s gallery in ivalid format for example .CR2 and click the &quot;Open&quot; button.</content><expected>The error message is displayed.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Logout from application</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C46</id>
+				<title>Logout button in default state</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-44</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Home page is open.
+2. Click on the icon in the upper-right corner.
+3. In the displayed menu check the Logout button.</steps>
+										<expected>The Logout button is available in the menu.
+
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C47</id>
+				<title>Check Logout button when user non-authorized</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The  http://prod.qa.nolimit.school/  is opened.
+The user is not registered in the system.</preconds>
+										<steps>1. Open mane page of a web site.
+2. Click on the icon in the upper-right ci=orner.
+3. In opened menu check the Logout button.</steps>
+										<expected>The logout button is absent. </expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C48</id>
+				<title>Check Logout button for authorized user</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-44</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the home page of the website.
+2. Click on the icon in the upper-right corner.
+3. In the opened menu check the Logout button.</steps>
+										<expected>The Logout button is available in the menu.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C49</id>
+				<title>Logout button displayed when edit form is opened</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-44</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+The personal account page is opened.</preconds>
+										<steps>1. Click on Edit Profile on the lower-left side.
+2. When Edir profile is opened check the Logout button in the upper-right corner of the form.</steps>
+										<expected>The Logout button is available.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>My account error handling</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C50</id>
+				<title>Edit profile with name 32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the name field 32 symbols.
+3. Click the Save changes button.</steps>
+										<expected>The message Successfully saved is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C51</id>
+				<title>Edit profile with name &gt;32 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the name field &gt;32 symbols.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C52</id>
+				<title>Edit profile in name field with numbers</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the name field numbers.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C53</id>
+				<title>Edit profile in name field with spesial symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the name field special symbols.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C54</id>
+				<title>Edit profile in name field with &quot;-&quot; symbol</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the name field &quot;-&quot; symbol.
+3. Click the Save changes button.</steps>
+										<expected>The message Successfully saved is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C55</id>
+				<title>Edit profile in surname field with 72 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the surname field 72 symbols.
+3. Click the Save changes button.</steps>
+										<expected>The message Successfully saved is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C56</id>
+				<title>Edit profile in surname field with &gt;72 symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the surname field &gt;72 symbols.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C57</id>
+				<title>Edit profile in surname field with numbers</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the surname field numbers.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C58</id>
+				<title>Edit profile in surname field with spesial symbols</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the surname field special symbols.
+3. Click the Save changes button.</steps>
+										<expected>The error message is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C59</id>
+				<title>Edit profile in surname field with &quot;-&quot; symbol</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>300</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-46</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is registered and login into the system.
+</preconds>
+										<steps>1. Open the Edit profile form.
+2. Input in the surname field &quot;-&quot; symbol.
+3. Click the Save changes button.</steps>
+										<expected>The message Successfully saved is displayed.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+			<section>
+		<name>Main Page</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Courses</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>List of course page</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C68</id>
+				<title>Open the courses page</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Open the home page.</content><expected>The home page is opened.</expected></step>
+<step>
+<index>2</index><content>Click on the icon on the right side in the header.</content><expected>The menu is displayed.</expected></step>
+<step>
+<index>3</index><content>Click on the menu item Сourses.</content><expected>The page with courses is opened. </expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C69</id>
+				<title>Open the courses page by direct link</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>http://test.qa.nolimit.school/ is opened</preconds>
+										<steps>1. Open the Courses page.
+2. Copy the link in the URL line.
+3. Open a new tab in the browser.
+4. Paste the link in the URL line.
+5. Press the Enter button on the keyboard.</steps>
+										<expected>The page with Courses is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C70</id>
+				<title>The courses page is opened by &apos;view all&apos; link on the main page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the home page.
+2. In the list of courses click on the &quot;View all&quot; button.</steps>
+										<expected>The page with a full list of courses is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C71</id>
+				<title>Check that the courses page contains the list of courses</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Critical</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the courses page.
+2. Check that the courses page contains a list of courses.</steps>
+										<expected>The courses page has contained a list of courses.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C72</id>
+				<title>The course page can be in the form of a list or a table</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>Open the courses page.</content><expected>The courses page is opened.</expected></step>
+<step>
+<index>2</index><content>Click on the list icon on the upper-right corner of the page.</content><expected>The Courses are displayed in the list form.</expected></step>
+<step>
+<index>3</index><content>Click on the table icon in the upper-right corner of the page.</content><expected>The Courses are displayed in the table form.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C73</id>
+				<title>Sort courses by prise</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>1. Open the courses page.
+</content><expected></expected></step>
+<step>
+<index>2</index><content>2. Click on the &quot;Sort by&quot; in the header.
+</content><expected>The sort menu is displayed.</expected></step>
+<step>
+<index>3</index><content>3. In the sort menu select &quot;From min to max&quot;.</content><expected>The courses are displayed from minimal price to maximal. </expected></step>
+<step>
+<index>4</index><content>4. In the sort menu select &quot;From max to min&quot;.</content><expected>The courses are displayed from maximal price to minimal.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C74</id>
+				<title>Sort courses by newest/oldest</title>
+												<template>Test Case (Steps)</template>
+																<type>Other</type>
+																<priority>Low</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps_separated><step>
+<index>1</index><content>1. Open the courses page.</content><expected>The courses page is opened.</expected></step>
+<step>
+<index>2</index><content>2. Click on the &quot;Sort by&quot; in the header.</content><expected>The menu is opened.</expected></step>
+<step>
+<index>3</index><content>3. Select the &quot;sort by newest/oldest&quot; .</content><expected>The courses are displayed from newest to oldest or from oldest to newest.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C75</id>
+				<title>The button &quot;Load more&quot; is displayed when page contains  &gt;8 courses</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. The courses page is opened.
+2. Check that the course page contains more than 8 courses.
+3. Scroll down the page.</steps>
+										<expected>The &quot;Load more&quot; button is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C76</id>
+				<title>After click on &quot;Load more&quot; button 8 more couses are displayed</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the courses page.
+2. Scroll down the page.
+3. Click on the &quot;Load more&quot; button.</steps>
+										<expected>8 more courses are displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C77</id>
+				<title>Displaying of &quot;Load more&quot; button when there are &lt;8 courses on the page.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-49</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the Courses page.
+2. Check that there are less than 8 courses displayed on the page.
+3. Scroll down the page.
+4. Check the &quot;Load more&quot; button.</steps>
+										<expected>The &quot;Load more&quot; button is not displayed when there are &lt;8 courses on the page.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Open course page</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C78</id>
+				<title>Opening the course page from list on the courses page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-47</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the courses page.
+2. Choose the course from the list.
+3. Click on the picture or name of the chosen course.</steps>
+										<expected>The course page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C79</id>
+				<title>Opening the course page by direct link.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-47</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open courses page.
+2. Copy the link in the URL line. 
+3. Open a new tab.
+4. Paste the link in URL line.</steps>
+										<expected>The course page is opened.
+</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C80</id>
+				<title>Check the information items about the course on the course page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-47</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. The course page is open. 
+2. Chech that all following items are present on the page:
+   - name of the course creator 
+- rating 
+- category
+- Add to wishList button
+- image 
+- description
+- block about the condition (enrolled students, duration, number of lectures, video, level)</steps>
+										<expected>The items are present on the course page.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C81</id>
+				<title>The Enroll button on the course page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>Page contains Enroll button.</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open any course page.
+2. Click on the Get course button.
+3. In the dropdown menu must be Enroll item.</steps>
+										<expected>The Enroll item is present in the dropdown menu.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C82</id>
+				<title>Click on the Enroll button as unauthorized user</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>The login pop up is displayed.</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the course page.
+2. Click on the Get course button.
+3. Click on the Enroll item in the dropdown menu.</steps>
+										<expected>The login pop up is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C83</id>
+				<title>Click on the Enroll button as authorized user</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-47</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>The user is authorized on the Master Study website.</preconds>
+										<steps>1. Open the course page.
+2. Click on the Get course button.
+3. Click on the Enroll item in the dropdown menu.</steps>
+										<expected>The start page is displayed.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Add course to favorites</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C84</id>
+				<title>Displayind &quot;Add to wishlist&quot; button on the course preview</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open courses page.
+2. Hover over the course.
+3. Check the &quot;Add to wishlist&quot; button.</steps>
+										<expected>The &quot;Add to wishlist&quot; button is displayed on the course preview.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C85</id>
+				<title>Displayind &quot;Add to wishlist&quot; button on the course page</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the course page.
+2. Check the &quot;Add to wishlist&quot; button.</steps>
+										<expected>The &apos;Add to wishlist&quot; button is displayed on the course page.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C86</id>
+				<title>Changing &quot;Add to wishlist&quot; button when user add course to wishlist</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open course page.
+3. Click on the &quot;Add to wishlist&quot; button.</steps>
+										<expected>The &quot;Add to wishlist&quot; is changed into pink color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C87</id>
+				<title>Changing Wishlisted button when user click on it</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open course page.
+3. Click on the Wishlisted button.</steps>
+										<expected>The Wishlisted button is changed into white color.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C88</id>
+				<title>Openind Wishlist by direct linck</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the wishlist page.
+2. Copy the URL link.
+3. Open a new tab.
+4. Paste the link in the URL line.</steps>
+										<expected>The Wishlist page is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C89</id>
+				<title>Opening Wishlist by left side menu</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the home page.
+2. Click on the icon in the header.
+3. In the opened menu click the Favorites.</steps>
+										<expected>The Wishlist is opened.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C90</id>
+				<title>Opening course page from wishlist</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-48</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the Wishlist.
+2. Click on the course from the list.
+</steps>
+										<expected>The course page is opened.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Cours info</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C91</id>
+				<title>Opening the course preview</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-101</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the courses page.
+2. Hover over the course.
+</steps>
+										<expected>The course preview is displayed.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C92</id>
+				<title>Check the info about course on the preview</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>High</priority>
+																<estimate>120</estimate>
+																								<references>https://nolimit.atlassian.net/browse/NS-101</references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<steps>1. Open the courses page.
+2. Hover over the course.
+3. On the displayed preview check the information about the course.</steps>
+										<expected>The information about the course is displayed on the course preview.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+</suite>
